@@ -1,0 +1,39 @@
+/**index.wxss**/
+@import "../logs/logs.wxss";
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.bannerBox{
+    width:100%;
+    height:auto;
+    margin: 0;
+    padding: 0;
+}
+swiper{
+    width: 100%;
+    height: 100%;
+}
+swiper-item{
+    width:100%;
+}
+.slide-image{
+    width: 100%;
+}
+.navBox{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+.navlist{
+    margin: 5px 0;
+    width: 100%;
+    background: #bff1e8;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    box-sizing: border-box;
+}

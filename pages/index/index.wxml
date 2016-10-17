@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="bannerBox">
+        <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+          <block wx:for="{{imgUrls}}">
+            <swiper-item>
+              <image src="{{item}}" class="slide-image"/>
+            </swiper-item>
+          </block>
+        </swiper>
+    </view>
+    <view class="navBox">
+        <view class="navlist"> 
+            <text>1</text>
+        </view>
+        <view class="navlist"> 
+            <text>2</text>
+        </view>
+        <view class="navlist"> 
+            <text>3</text>
+        </view>
+    </view>
+    <view class="group">
+    <!-- <block wx:for="{{iconSize}}" wx:for-item="i"> -->
+        <block wx:for="{{iconColor}}" wx:for-item="j">
+            <icon type="success" size="10" color="{{j}}"/>
+        </block>
+    <!-- </block> -->
+    </view>
+    <!-- 引用文件 -->
+    <include src="../list/list.wxml"/>
+    <import src="../logs/logs.wxml"/>
+    <template is="A"></template>
+</view>
