@@ -30,6 +30,7 @@ Page({
     console.log('onLoad');
     console.log(app);
     var that = this
+    const _this = this
     //调用应用实例的方法获取全局数据
     // app.getUserInfo(function(userInfo){
     //   //更新数据
@@ -37,5 +38,18 @@ Page({
     //     userInfo:userInfo
     //   })
     // })
+    wx.request({
+      url: 'https://api.douban.com/v2/movie/in_theaters',
+      data: {},
+      header: {
+        'Content-Type': 'application/json'
+      },
+      success: function (res) {
+        that.setData({
+          list: res.data.subjects
+        });
+        console.log(res);
+      }
+    })
   }
 })

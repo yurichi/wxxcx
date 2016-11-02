@@ -4,6 +4,6 @@
       <text class="log-item">{{index + 1}}. {{log}}</text>
     </block>
     <template name="A">
-      <text class="sadsa"> balbala </text>
+      <text class="sadsa">模版A</text>
     </template>
 </view>

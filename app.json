@@ -7,7 +7,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#ccc",
-    "navigationBarTitleText": "首个巴拉巴拉",
+    "navigationBarTitleText": "头部",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
