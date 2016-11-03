@@ -5,7 +5,7 @@ Page({
   data: {
     motto: 'Hello World',
     userInfo: {
-      name:'213213213'
+      name: '213213213'
     },
     imgUrls: [
       'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
@@ -24,20 +24,37 @@ Page({
       'success', 'info', 'warn', 'waiting', 'safe_success', 'safe_warn',
       'success_circle', 'success_no_circle', 'waiting_circle', 'circle', 'download',
       'info_circle', 'cancel', 'search', 'clear'
-    ]
+    ],
+    markers: [{
+      latitude: 23.099994,
+      longitude: 113.324520,
+      name: 'T.I.T 创意园',
+      desc: '我现在的位置'
+    }],
+    covers: [{
+      latitude: 23.099794,
+      longitude: 113.324520,
+      iconPath: '../img/star.png',
+      rotate: 10
+    }, {
+      latitude: 23.099298,
+      longitude: 113.324520,
+      iconPath: '../img/star.png',
+      rotate: 90
+    }]
   },
   onLoad: function () {
     console.log('onLoad');
     console.log(app);
     var that = this
     const _this = this
-    //调用应用实例的方法获取全局数据
-    // app.getUserInfo(function(userInfo){
-    //   //更新数据
-    //   that.setData({
-    //     userInfo:userInfo
-    //   })
-    // })
+      //调用应用实例的方法获取全局数据
+      // app.getUserInfo(function(userInfo){
+      //   //更新数据
+      //   that.setData({
+      //     userInfo:userInfo
+      //   })
+      // })
     wx.request({
       url: 'https://api.douban.com/v2/movie/in_theaters',
       data: {},

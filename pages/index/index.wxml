@@ -9,7 +9,7 @@
           </block>
         </swiper>
     </view>
-    <view class="navBox">
+<!--     <view class="navBox">
         <view class="navlist"> 
             <text>1</text>
         </view>
@@ -19,7 +19,7 @@
         <view class="navlist"> 
             <text>3</text>
         </view>
-    </view>
+    </view> -->
     <view class="group">
     <!-- <block wx:for="{{iconSize}}" wx:for-item="i"> -->
         <block wx:for="{{iconColor}}" wx:for-item="j">
@@ -32,3 +32,4 @@
     <import src="../logs/logs.wxml"/>
     <template is="A"></template>
 </view>
+<map longitude="113.324520" latitude="23.099994" markers="{{markers}}" covers="{{covers}}" style="width: 100%; height: 400px;"></map>
