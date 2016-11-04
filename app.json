@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/logs/logs",
-    "pages/list/list"
+    "src/index/index",
+    "src/logs/logs",
+    "src/list/list"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -16,13 +16,13 @@
     "borderStyle": "white",
     "backgroundColor": "#f9f9f9",
     "list": [{
-      "pagePath": "pages/index/index",
+      "pagePath": "src/index/index",
       "text": "首页"
     }, {
-      "pagePath": "pages/list/list",
+      "pagePath": "src/list/list",
       "text": "list"
     }, {
-      "pagePath": "pages/logs/logs",
+      "pagePath": "src/logs/logs",
       "text": "日志"
     }]
   },

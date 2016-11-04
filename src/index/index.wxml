@@ -9,7 +9,7 @@
           </block>
         </swiper>
     </view>
-<!--     <view class="navBox">
+    <!--<view class="navBox">
         <view class="navlist"> 
             <text>1</text>
         </view>
@@ -29,6 +29,7 @@
     </view>
     <!-- 引用文件 -->
     <include src="../list/list.wxml"/>
+    <!-- 引用模版 -->
     <import src="../logs/logs.wxml"/>
     <template is="A"></template>
 </view>

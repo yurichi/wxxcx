@@ -3,6 +3,7 @@
 var app = getApp()
 Page({
   data: {
+    title: 'header-',
     motto: 'Hello World',
     userInfo: {
       name: '213213213'
@@ -68,5 +69,14 @@ Page({
         console.log(res);
       }
     })
-  }
+    this.loadMore();
+  },
+  // 页面准备完成
+  onReady() {
+    wx.setNavigationBarTitle({ title: this.data.title + 'onReady' })
+    console.log('onReady');
+  },
+  loadMore() {
+    wx.setNavigationBarTitle({ title: this.data.title + 'loadMore' })
+  },
 })
